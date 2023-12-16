@@ -21,11 +21,10 @@
         </div>
     </div>
     <div class="navigation-container">
-        <!-- Use an anchor tag and call the changeURL function on click -->
-        <a href="#" onclick="changeURL('whispers_of_solitude_about.html')" class="about-button">About</a>
+        <!-- Link to the About page -->
+        <a href="about.html">About</a>
     </div>
     <script>
-        // Manually trigger autoplay after a user interaction
         document.addEventListener('DOMContentLoaded', function () {
             const Solitude = document.getElementById('Solitude');
             Solitude.play();
@@ -35,17 +34,8 @@
             // Your logic for checking the password goes here
             // If password is correct, consider calling joinCult();
         }
-
-        function changeURL(newURL) {
-            // Change the URL using the History API
-            history.pushState({}, "", newURL);
-
-            // Log to the console to verify that the function is being called
-            console.log("URL changed to " + newURL);
-        }
     </script>
 </body>
 </html>
-
 
 
