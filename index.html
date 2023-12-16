@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhispersOfSolitude</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio preload="auto" loop autoplay id="Solitude">
+        <source src="Solitude.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="password-container">
+        <img src="Lone Path.jpg">
+        <div>
+            <h1>JOIN THE CULT</h1>
+            <input type="password" id="passwordInput" placeholder="Password">
+            <button onclick="checkPassword()">Unlock</button>
+            <p id="errorMessage"></p>
+        </div>
+    </div>
+    <div class="navigation-container">
+        <!-- Use an anchor tag and call the changeURL function on click -->
+        <a href="#" onclick="changeURL('whispers_of_solitude_about.html')" class="about-button">About</a>
+    </div>
+    <script>
+        // Manually trigger autoplay after a user interaction
+        document.addEventListener('DOMContentLoaded', function () {
+            const Solitude = document.getElementById('Solitude');
+            Solitude.play();
+        });
+
+        function checkPassword() {
+            // Your logic for checking the password goes here
+            // If password is correct, consider calling joinCult();
+        }
+
+        function changeURL(newURL) {
+            // Change the URL using the History API
+            history.pushState({}, "", newURL);
+
+            // Log to the console to verify that the function is being called
+            console.log("URL changed to " + newURL);
+        }
+    </script>
+</body>
+</html>
+
+
+

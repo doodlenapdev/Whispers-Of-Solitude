@@ -1,0 +1,39 @@
+body {
+    margin-top: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #222;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.password-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+input {
+    padding: 8px;
+    margin: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4c1415;
+    color: white;
+    cursor: pointer;
+}
+
+#errorMessage {
+    color: red;
+}
